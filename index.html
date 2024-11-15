@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Escapes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mugle&family=The+Cat+Has+a+Hat&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Garamond', serif;
+            background-image: url('https://wallpapers.com/images/featured/indian-aesthetic-a2nktltm2r9dlrlo.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 3px solid red;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(45deg, rgb(101, 218, 218), rgb(242, 0, 0));
+            padding: 10px 0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-family: 'Marola', cursive;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-family: 'Kust', cursive;
+            color: red;
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-family: 'The Cat Has a Hat', cursive;
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        .location-card {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            border: 2px solid red;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            transition: transform 0.2s;
+        }
+
+        .location-card:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid red;
+        }
+
+        .description {
+            font-family: 'Nyam', cursive;
+            font-weight: bold;
+            color: black;
+        }
+
+        .tour-date {
+            font-family: 'Mugle', cursive;
+            color: red;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-top: 3px solid red;
+        }
+
+        @media (max-width: 768px) {
+            .location-card {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .login-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+
+    .form-card {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: left;
+    }
+
+    .form-card h3 {
+        margin-bottom: 10px;
+        font-family: 'Garamond', serif;
+    }
+
+    .form-card label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+
+    .form-card input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: 'Kust', 'Mugle', 'Marola', 'The Cat Has a Hat', 'Nyam', sans-serif;
+    }
+
+    .form-card button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .form-card button:hover {
+        background-color: darkred;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aesthetic Escapes <img src="https://png.pngtree.com/png-clipart/20231004/original/pngtree-india-map-raster-picture-image_13086563.png" alt="Map of India" style="height: 150px; width: 150px;"></h1>
+    </header>
+    
+    <nav>
+        <a href="#north">North India</a>
+        <a href="#south">South India</a>
+        <a href="#east">East India</a>
+        <a href="#west">West India</a>
+        <a href="#treks">Trek Locations</a>
+        <a href="#blog">Blog</a>
+        <a href="#events">Events</a>
+        <a href="#login">Login/Register</a>
+    </nav>
+    <marquee  height="50" width="100%" ><font color="White" size="60%"><b>Welcome to India!</b></font></marquee>
+
+
+    <!-- North India-->
+    <section class="section" id="north">
+        <h2 style="color: red;">North India</h2>
+        <div class="location-card">
+            <img src="https://indoislamic.org/wp-content/uploads/2023/09/Qutub_Minar_in_the_monsoons_20170908115259.jpg" alt="Delhi">
+            <h3 style="color: red;">Delhi</h3>
+            <p class="description">The capital city, known for its rich history and culture.</p>
+            <p class="tour-date">Best time to visit: October to March</p>
+        </div>
+
+        <div class="location-card">
+            <img src="https://destinosahora.com/wp-content/uploads/2019/09/tajmahajnoche-1280x720.jpg" alt="Agra">
+            <h3 style="color: red;">Agra</h3>
+            <p class="description">Home to the iconic Taj Mahal.</p>
+            <p class="tour-date">Best time to visit: October to March</p>
+        </div>
+        <div class="location-card">
+            <img src="https://www.learnreligions.com/thmb/9X3gLTQoakHFwLcKOxGPGWtm924=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/evening-at-varanasi-610625330-58e54bd25f9b58ef7e7c8bb9.jpg" alt="Varanasi">
+            <h3 style="color: red;">Banaras</h3>
+            <p class="description">Known for its spiritual significance and ghats.</p>
+            <p class="tour-date">Best time to visit: October to March</p>
+        </div>
+        <div class="location-card">
+            <img src="https://www.naturetravelagency.com/uploads/1703234831best%20time%20to%20visit%20Manali%20for%20snowfall.jpg" alt="Manali">
+            <h3 style="color: red;">Manali</h3>
+            <p class="description">A beautiful hill station with scenic views.</p>
+            <p class="tour-date">Best time to visit: December to February</p>
+        </div>
+        <div class="location-card">
+            <img src="https://s3.india.com/wp-content/uploads/2024/06/10-Fascinating-Facts-About-Nainital.jpg?impolicy=Medium_Widthonly&w=350&h=263" alt="Nainital">
+            <h3 style="color: red;">Nainital</h3>
+            <p class="description">Known for its picturesque lakes and hills.</p>
+            <p class="tour-date">Best time to visit: March to June</p>
+        </div>
+        <div class="location-card">
+            <img src="https://www.jaypeehotels.com/blog/wp-content/uploads/2024/04/BLOG-4-6.jpg" alt="Kedarnath">
+            <h3 style="color: red;">Kedarnath</h3>
+            <p class="description">Famous for the Kedarnath Temple and trekking opportunities.</p>
+            <p class="tour-date">Best time to visit: May to October</p>
+        </div>
+    </section>
+
+
+    
+    <!-- South India -->
+    <section class="section" id="south">
+        <h2 style="color: red;">South India</h2>
+        <div class="location-card">
+            <img src="https://www.keralasoils.gov.in/sites/default/files/inline-images/kerala1.jpg" alt="Kerala">
+            <h3 style="color: red;">Kerala</h3>
+            <p class="description">Known for its backwaters and Ayurvedic treatments.</p>
+            <p class="tour-date">Best time to visit: September to March</p>
+        </div>
+        <div class="location-card">
+            <img src="https://content.r9cdn.net/rimg/dimg/a9/dd/d6b29241-city-44818-166a7453734.jpg?width=1366&height=768&xhint=1600&yhint=1049&crop=true" alt="Karnataka">
+            <h3 style="color: red;">Karnataka</h3>
+            <p class="description">Home to beautiful hill stations and historic sites.</p>
+            <p class="tour-date" >Best time to visit: October to February</p>
+        </div>
+        <div class="location-card">
+            <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/05/Sri-Ranganathaswamy-Temple-Srirangam.jpg" alt="Tamil Nadu">
+            <h3 style="color: red;">Tamil Nadu</h3>
+            <p class="description">Famous for its temples and rich culture.</p>
+            <p class="tour-date">Best time to visit: November to March</p>
+        </div>
+        <div class="location-card">
+            <img src="https://www.india-a2z.com/images/Port-Blair1.jpg" alt="Andaman">
+            <h3 style="color: red;">Andaman Islands</h3>
+            <p class="description">Known for pristine beaches and water sports.</p>
+            <p class="tour-date">Best time to visit: October to May</p>
+        </div>
+        <div class="location-card">
+            <img src="https://vistaramagazine.com/wp-content/uploads/2024/05/Pondicherry.jpg" alt="Pondicherry">
+            <h3 style="color: red;">Pondicherry</h3>
+            <p class="description">A blend of French and Indian culture with beautiful beaches.</p>
+            <p class="tour-date">Best time to visit: October to March</p>
+        </div>
+        
+        <div class="location-card">
+            <img src="https://www.holidaymonk.com/wp-content/uploads/2022/05/Mysore-Palace-1024x684.webp" alt="Mysore">
+            <h3 style="color: red;">Mysore</h3>
+            <p class="description">Famous for its palaces and the Mysore Dasara festival.</p>
+            <p class="tour-date">Best time to visit: October to March</p>
+        </div>
+    </section>
+
+
+
+    <!-- East India-->
+    <section class="section" id="east">
+        <h2 style="color: red;">East India</h2>
+        <div class="location-card">
+            <img src="https://www.holidify.com/images/bgImages/KOLKATA.jpg" alt="Kolkata">
+            <h3 style="color: red;">Kolkata</h3>
+            <p class="description">Known for its rich history, culture, and the iconic Howrah Bridge.</p>
+            <p class="tour-date">Best time to visit: October to March</p>
+        </div>
+        <div class="location-card">
+            <img src="https://www.northeast-india.in/wp-content/uploads/Kanchandzonga-from-Darjeeling-3-1.jpg" alt="Darjeeling">
+            <h3 style="color: red;">Darjeeling</h3>
+            <p class="description">Famous for its tea and stunning views of the Himalayas.</p>
+            <p class="tour-date">Best time to visit: March to June</p>
+        </div>
+        <div class="location-card">
+            <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/02/01155348/road-trips-from-shillong.jpg?tr=w-1200,q-60" alt="Shillong">
+            <h3 style="color: red;">Shillong</h3>
+            <p class="description">Known as the Scotland of India, famous for its hills and waterfalls.</p>
+            <p class="tour-date">Best time to visit: March to June</p>
+        </div>
+        <div class="location-card">
+            <img src="https://static.toiimg.com/thumb/108292225/ASSAM.jpg?width=1200&height=900" alt="Assam">
+            <h3 style="color: red;">Assam</h3>
+            <p class="description">Famous for its tea gardens and wildlife sanctuaries.</p>
+            <p class="tour-date">Best time to visit: October to March</p>
+        </div>
+      
+        <div class="location-card">
+            <img src="https://www.livemint.com/lm-img/img/2023/06/07/1600x900/Jagannath_Puri_1686126569128_1686126569264.jpg" alt="Puri">
+            <h3 style="color: red;">Puri</h3>
+            <p class="description">Famous for its beaches and the Jagannath Temple.</p>
+            <p class="tour-date">Best time to visit: October to March</p>
+        </div>
+        <div class="location-card">
+            <img src="https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/04/5d230d794b688392478853cc6db89130_1000x1000.jpg" alt="Konark">
+            <h3 style="color: red;">Konark</h3>
+            <p class="description">Known for the Sun Temple, a UNESCO World Heritage Site.</p>
+            <p class="tour-date">Best time to visit: October to March</p>
+        </div>
+    </section>
+
+
+
+    <!-- West India -->
+    <section class="section" id="west">
+        <h2 style="color: red;">West India</h2>
+        <div class="location-card">
+            <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Chhatrapati-Shivaji-Terminus-railway-station-mumbai.jpg" alt="Mumbai">
+            <h3 style="color: red;">Mumbai</h3>
+            <p class="description">The city of dreams, known for Bollywood and its vibrant nightlife.</p>
+            <p class="tour-date">Best time to visit: November to February</p>
+        </div>
+        <div class="location-card">
+            <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2024/03/01154117/feature-2024-02-28t091640-790-1600x900.jpeg" alt="Goa">
+            <h3 style="color: red;">Goa</h3>
+            <p class="description">Famous for its beaches, nightlife, and Portuguese heritage.</p>
+            <p class="tour-date">Best time to visit: November to February</p>
+        </div>
+        <div class="location-card">
+            <img src="https://www.india.com/wp-content/uploads/2024/07/udaipur-weekends.jpg" alt="Udaipur">
+            <h3 style="color: red;">Udaipur</h3>
+            <p class="description">Known as the City of Lakes, famous for its palaces.</p>
+            <p class="tour-date">Best time to visit: September to March</p>
+        </div>
+        
+        <div class="location-card">
+            <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1661694788.webp" alt="Ahmedabad">
+            <h3 style="color: red;">Ahmedabad</h3>
+            <p class="description">Known for its rich culture and heritage sites.</p>
+            <p class="tour-date">Best time to visit: October to March</p>
+        </div>
+        <div class="location-card">
+            <img src="https://econaur.com/wp-content/uploads/2018/07/hawa-mahal-travels-day.jpg" alt="Jaipur">
+            <h3 style="color: red;">Jaipur</h3>
+            <p class="description">Famous for its palaces and vibrant markets.</p>
+            <p class="tour-date">Best time to visit: October to March</p>
+        </div>
+        <div class="location-card">
+            <img src="https://www.rannutsav.net/wp-content/uploads/2022/07/White-Rann-New-1024x568.jpg" alt="Rann of Kutch">
+            <h3 style="color: red;">Rann of Kutch</h3>
+            <p class="description">Famous for its white salt desert and cultural festivals.</p>
+            <p class="tour-date">Best time to visit: November to March</p>
+        </div>
+    </section>
+
+
+    
+    <!-- Trekking -->
+    <section class="section" id="treks">
+        <h2 style="color: red;">Trek Locations</h2>
+        <div class="location-card">
+            <img src="https://planmytrek.com/wp-content/uploads/2017/10/Triund-1-e1481853631369.jpg" alt="Triund">
+            <h3 style="color: red;">Triund</h3>
+            <p class="description">A beautiful trek in the Himalayas with stunning views.</p>
+            <p class="tour-date">Best time to visit: March to June, September to October</p>
+        </div>
+        
+        <div class="location-card">
+            <img src="https://timetravelers.in/media/tour_images/gallery/HD-Harihar-Fort-Trek-Nashik-Best-Indian-Treks.jpg" alt="Nashik">
+            <h3 style="color: red;">Nashik</h3>
+            <p class="description">Known for its vineyards and the beautiful Anjneri Hills trek.</p>
+            <p class="tour-date">Best time to visit: September to March</p>
+        </div>
+        <div class="location-card">
+            <img src="https://media1.thrillophilia.com/filestore/q91jqy6zc4n2hsip94rk93wr6kaa_everest-base-camp-trek-independently-main-image-900.png" alt="Everest Base Camp">
+            <h3 style="color: red;">Everest Base Camp</h3>
+            <p class="description">A legendary trek for adventure seekers, offering breathtaking views of Everest.</p>
+            <p class="tour-date">Best time to visit: April to May, September to November</p>
+        </div>
+    </section>
+
+    
+    
+    <section class="section" id="blog">
+        <h2 style="color: red;">Travel Blog</h2>
+        <p>
+            <strong>Mystical Mornings in Banaras</strong></p>
+            There’s something otherworldly about watching the sunrise over the ghats of Varanasi. As dawn breaks, the Ganges glows in hues of orange and gold, reflecting the vibrant life 
+            that awakens along its banks. Priests in saffron robes chant morning prayers, the air thick with incense and the quiet hum of history. It’s as if time has stood still in this sacred city. 
+            Walk the ghats, join the boat rides at dawn, and let the city’s mysticism work its way into your soul.</p>
+          <p>
+            Best Time to Visit: October to February
+            Tour Dates: November 5, December 15, January 20</p>
+        <p>Stay tuned for exciting articles, tips, and stories from travelers across India.</p>
+    </section>
+
+
+    
+    <section class="section" id="events">
+        <h2 style="color: red;">Upcoming Events</h2>
+        <p>Check out our calendar for upcoming events and festivals across India!</p>
+    </section>
+    <marquee  height="50" width="100%" ><font color="White" size="60%"><i>Login for future updates</i></font></marquee>
+  
+    
+
+
+    <section class="section" id="login">
+        <h2 style="color: red;">Login/Register</h2>
+        <p>Create an account or log in to access exclusive content and offers!</p>
+        <section class="section" id="login">
+            
+            <div class="login-container">
+                <div class="form-card">
+                    <h3 style="color: black;">Login to Your Account</h3>
+                    <form action="/login" method="post">
+                        <label for="username" style="color: black;">Username:</label>
+                        <input type="text" id="username" name="username" required placeholder="Enter your username" />
+        
+                        <label for="password" style="color: black;">Password:</label>
+                        <input type="password" id="password" name="password" required placeholder="Enter your password" />
+        
+                        <button type="submit" style="background-color: red; color: white;">Login</button>
+                    </form>
+                </div>
+                <div class="form-card">
+                    <h3 style="color: black;">Don't have an account?</h3>
+                    <p style="color: black;">Create one to access exclusive content and offers!</p>
+                    <form action="/register" method="post">
+                        <label for="new-username" style="color: black;">Username:</label>
+                        <input type="text" id="new-username" name="new-username" required placeholder="Choose a username" />
+        
+                        <label for="new-password" style="color: black;">Password:</label>
+                        <input type="password" id="new-password" name="new-password" required placeholder="Choose a password" />
+        
+                        <button type="submit" style="background-color: red; color: white;">Register</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Aesthetic Escapes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
